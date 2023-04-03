@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+            <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--Removing actionbar-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+    <style name="ToolbarTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:textColorPrimary">@color/fontColorPrimary</item>
+        <item name="android:textColorSecondary">@color/fontColorSecondary</item>
+     </style>
+
+    <style name="PopupStyle" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/fontColor</item>
+    </style>
+
+
+    <style name="ProfileStyle">
+        <item name="android:textAlignment">viewEnd</item>
+        <item name="android:paddingTop">@dimen/small_padding</item>
+        <item name="android:textColor">@color/layoutTextColor</item>
+        <item name="android:textSize">@dimen/layout_size</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/ButtonTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/ButtonBackgroundColor</item>
+
+    </style>
+    <style name="TitleStyle">
+        <item name="android:textColor">@color/layoutTextColor</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:layout_marginTop">@dimen/layout_big_top_margin</item>
+        <item name="android:layout_marginRight">@dimen/layout_big_top_margin</item>
+        <item name="android:layout_marginLeft">@dimen/layout_big_top_margin</item>
+    </style>
+    
+
+
+</resources>

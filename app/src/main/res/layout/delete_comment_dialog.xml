@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/ic_delete" />
+
+    <TextView
+        android:id="@+id/delete_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/image_view"
+        android:layout_marginBottom="10dp"
+        android:text="@string/delete_comment"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/ask_delete_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delete_view"
+        android:layout_toStartOf="@id/image_view"
+        android:layout_marginBottom="20dp"
+        android:text="@string/ask_continue"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <Button
+        android:id="@+id/positive_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        android:layout_toStartOf="@id/image_view"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/ask_delete_view"/>
+    <Button
+        android:id="@+id/negative_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no"
+        android:layout_toStartOf="@id/positive_button"
+        android:layout_below="@id/ask_delete_view"/>
+
+
+</RelativeLayout>

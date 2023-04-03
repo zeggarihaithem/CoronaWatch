@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/photo_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="solutus.coronawatch.ui.mainActivity.health.diagnose.photo.PhotoDiagnoseFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+
+        <FrameLayout
+            android:id="@+id/frame_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bordered_background">
+
+            <RelativeLayout
+                android:id="@+id/add_photo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/add_photo_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/add_photo_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    app:srcCompat="@drawable/ic_cloud_upload_black" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/add_photo_view"
+                    app:srcCompat="@drawable/ic_insert_photo_black" />
+
+                <TextView
+                    android:id="@+id/add_photo_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="5dp"
+                    android:text="@string/add_photo"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/fontColor" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/photo_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/diagnose_button"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frame_view"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/circular_background"
+            android:layout_marginBottom="48dp"
+            android:text="@string/diagnose_button" />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/replace_photo_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/replace_photo_button"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_autorenew" />
+
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/userFragment"
+        android:icon="@mipmap/ic_user"
+        android:title="@string/user"/>
+    <item
+        android:id="@+id/healthFragment"
+        android:icon="@mipmap/ic_heart"
+        android:title="@string/health"/>
+    <item
+        android:id="@+id/mapFragment"
+        android:icon="@mipmap/ic_map"
+        android:title="@string/map" />
+
+    <item
+        android:id="@+id/infoFragment"
+        android:icon="@mipmap/ic_info"
+        android:title="@string/info"/>
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@mipmap/ic_home"
+        android:title="@string/home"/>
+
+
+</menu>

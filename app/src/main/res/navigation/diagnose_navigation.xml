@@ -1,0 +1,16 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/diagnose_navigation"
+    app:startDestination="@id/photo_fragment">
+
+    <fragment
+        android:id="@+id/photo_fragment"
+        android:name="solutus.coronawatch.ui.mainActivity.health.diagnose.photo.PhotoDiagnoseFragment"
+        tools:layout="@layout/photo_diagnose_fragment" />
+
+    <fragment
+        android:id="@+id/camera_fragment"
+        android:name="solutus.coronawatch.ui.mainActivity.health.diagnose.camera.CameraDiagnoseFragment"
+        tools:layout="@layout/camera_diagnose_fragment" />
+</navigation>

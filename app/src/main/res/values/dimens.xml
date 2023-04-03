@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_marge">4dp</dimen>
+    <dimen name="image_padding">4dp</dimen>
+    <dimen name="image_size">100dp</dimen>
+    <dimen name="video_small_size">125dp</dimen>
+    <dimen name="video_big_size">225dp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+
+    <dimen name="layout_size">10sp</dimen>
+    <dimen name="title_size">18sp</dimen>
+    <dimen name="small_padding">2dp</dimen>
+    <dimen name="fragment_margin">12dp</dimen>
+    <dimen name="layout_big_top_margin">10dp</dimen>
+    <dimen name="layout_small_top_margin">5dp</dimen>
+    <dimen name="layout_big_margin">20dp</dimen>
+    <dimen name="video_margin">16dp</dimen>
+    <dimen name="list_view_divider">10sp</dimen>
+
+
+</resources>

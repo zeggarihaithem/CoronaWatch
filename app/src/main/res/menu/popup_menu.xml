@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/login"
+        android:icon="@drawable/ic_login"
+        android:title="@string/login"
+        app:showAsAction="ifRoom" />
+    <group android:id="@+id/user_group">
+        <item
+            android:id="@+id/notification"
+            android:icon="@mipmap/ic_notification"
+            android:title="@string/notifications"
+            app:showAsAction="ifRoom" />
+        <item
+            android:icon="@drawable/ic_more_vert"
+            android:title="@string/popup_menu"
+            app:showAsAction="always">
+            <menu>
+                <item
+                    android:id="@+id/settings"
+                    android:icon="@drawable/ic_settings_black"
+                    android:title="@string/settings"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/help"
+                    android:icon="@drawable/ic_help_black"
+                    android:title="@string/help"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/active_notifications"
+                    android:checkable="true"
+                    android:icon="@drawable/ic_notifications_black"
+                    android:title="@string/notifications"
+                    app:showAsAction="never" />
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/ic_logout_black"
+                    android:title="@string/logout"
+                    app:showAsAction="never" />
+            </menu>
+        </item>
+    </group>
+</menu>

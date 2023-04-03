@@ -1,0 +1,32 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/health_navigation"
+    app:startDestination="@id/diagnose_fragment">
+
+    <fragment
+        android:id="@+id/diagnose_fragment"
+        android:name="solutus.coronawatch.ui.mainActivity.health.diagnose.DiagnoseFragment"
+        tools:layout="@layout/diagnose_fragment">
+        <action
+            android:id="@+id/to_diagnose_fragment_action"
+            app:destination="@+id/diagnose_fragment" />
+        <action
+            android:id="@+id/to_result_fragment_action"
+            app:destination="@+id/result_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/result_fragment"
+        android:name="solutus.coronawatch.ui.mainActivity.health.result.ResultFragment"
+        tools:layout="@layout/result_fragment">
+        <action
+            android:id="@+id/to_diagnose_fragment_action"
+            app:destination="@+id/diagnose_fragment" />
+        <action
+            android:id="@+id/to_result_fragment_action"
+            app:destination="@+id/result_fragment" />
+
+    </fragment>
+
+</navigation>

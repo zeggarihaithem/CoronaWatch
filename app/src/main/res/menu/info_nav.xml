@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/photo_fragment"
+        android:title="@string/photo"/>
+
+
+    <item android:id="@+id/video_fragment"
+        android:title="@string/video"/>
+
+    <item android:id="@+id/camera_fragment"
+        android:title="@string/camera"/>
+
+</menu>

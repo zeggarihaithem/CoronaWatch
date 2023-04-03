@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_navigation"
+    app:startDestination="@id/videos_fragment">
+
+    <fragment
+        android:id="@+id/videos_fragment"
+        android:name="solutus.coronawatch.ui.mainActivity.user.videos.listVideos.UserVideosFragment"
+        tools:layout="@layout/user_videos_fragment">
+        <action
+            android:id="@+id/to_watch_video_fragment_action"
+            app:destination="@+id/watch_video_fragment" />
+
+        <action
+            android:id="@+id/to_videos_fragment_action"
+            app:destination="@+id/videos_fragment" />
+        <action
+            android:id="@+id/to_add_video_fragment_action"
+            app:destination="@+id/add_video_fragment" />
+        <action
+            android:id="@+id/to_profile_fragment_action"
+            app:destination="@+id/profile_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/watch_video_fragment"
+        android:name="solutus.coronawatch.ui.mainActivity.user.videos.watchVideo.UserWatchVideoFragment"
+        tools:layout="@layout/watch_video_fragment">
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/add_video_fragment"
+        android:name="solutus.coronawatch.ui.mainActivity.user.addVideo.AddVideoFragment"
+        tools:layout="@layout/add_video_fragment">
+        <action
+            android:id="@+id/to_add_video_fragment_action"
+            app:destination="@+id/add_video_fragment" />
+        <action
+            android:id="@+id/to_videos_fragment_action"
+            app:destination="@+id/videos_fragment" />
+        <action
+            android:id="@+id/to_profile_fragment_action"
+            app:destination="@+id/profile_fragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/profile_fragment"
+        android:name="solutus.coronawatch.ui.mainActivity.user.profile.ProfileFragment"
+        tools:layout="@layout/profile_fragment">
+        <action
+            android:id="@+id/to_profile_fragment_action"
+            app:destination="@+id/profile_fragment" />
+        <action
+            android:id="@+id/to_videos_fragment_action"
+            app:destination="@+id/videos_fragment" />
+        <action
+            android:id="@+id/to_add_video_fragment_action"
+            app:destination="@+id/add_video_fragment" />
+
+    </fragment>
+
+
+</navigation>
